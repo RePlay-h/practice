@@ -1,5 +1,11 @@
 # Шпаргалка git
 
+## Соединение git & github
+git remote add origin _ref_
+git remote -v
+git push -u origin master
+git push
+
 ## Хэши
 Хэш - это зашифрованная информация о коммите (дата, автор, содержание)
 
