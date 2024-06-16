@@ -21,16 +21,16 @@ HEAD - специальный служебный файл, который сод
 
 **commited = tracked**
 
-'''mermaid
-  graph ID;
+```mermaid
+  graph TD;
     A[Статусы файлов в git] --> B{Вызван ли для файла git add?};
-    B --> Yes --> G{Файл был закомичен?};
-    B --> No --> D[Статус файла - untracked];
-    G --> Yes --> H[Статус файла - tracked];
-    G --> No --> C{Файл был изменен?};
-    C --> Yes --> E[Статус файла - modified];
-    C --> No --> F[Статус файла - tracked];
-'''
+    B -- Yes --> G{Файл был закомичен?};
+    B -- No --> D[Статус файла - untracked];
+    G -- Yes --> H[Статус файла - tracked];
+    G -- No --> C{Файл был изменен?};
+    C -- Yes --> E[Статус файла - modified];
+    C -- No --> F[Статус файла - tracked];
+```
 
 ## Оформление коммита
 ### Можно использовать оформление Conventional Commits
